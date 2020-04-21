@@ -13,10 +13,8 @@
         <hr>
         {% if latest_comments %}
             {% for c in latest_comments %}
-                <p>
                     <strong>{{ c.comment_author }}</strong>
                     <p>{{ c.comment_text }}</p>
-                </p>
             {% endfor %}
         {% else %}
             No comments - leave your one first!
@@ -25,8 +23,12 @@
 
         <form action="{% url 'articles:leave_comment' article.id %}" method="POST">
             {% csrf_token %}
-            <input type="text" required placeholder="Your Name" name="name"><br>
-            <textarea name="text" required="" placeholder="Text of comment" cols="30" rows="10"></textarea><br>
+            <label>
+                <input type="text" required placeholder="Your Name" name="name">
+            </label><br>
+            <label>
+                <textarea name="text" required="" placeholder="Text of comment" cols="30" rows="10"></textarea>
+            </label><br>
             <button type="submit">Leave a comment</button>
         </form>
 

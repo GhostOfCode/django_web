@@ -235,7 +235,7 @@
 			if (ns[cn])
 				return;
 
-			// Make pure static class
+			// Make pure static_files class
 			if (s[2] == 'static') {
 				ns[cn] = p;
 
@@ -296,7 +296,7 @@
 				});
 			}
 
-			// Add static methods
+			// Add static_files methods
 			t.each(p['static'], function(f, n) {
 				ns[cn][n] = f;
 			});
@@ -826,7 +826,7 @@ tinymce.create('tinymce.util.Dispatcher', {
 (function() {
 	var each = tinymce.each;
 
-	tinymce.create('static tinymce.util.Cookie', {
+	tinymce.create('static_files tinymce.util.Cookie', {
 		getHash : function(n) {
 			var v = this.get(n), h;
 
@@ -960,7 +960,7 @@ tinymce.create('tinymce.util.Dispatcher', {
 		};
 })();
 
-tinymce.create('static tinymce.util.XHR', {
+tinymce.create('static_files tinymce.util.XHR', {
 	send : function(o) {
 		var x, t, w = window, c = 0;
 

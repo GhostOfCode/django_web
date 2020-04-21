@@ -12,7 +12,7 @@ def index(requst):
 def detail(requst, article_id):
     try:
         a = Article.objects.get(id=article_id)
-    except:
+    except Exception:
         raise Http404('No article found!')
 
     latest_comments = a.comment_set.order_by('-id')[:10]
@@ -23,7 +23,7 @@ def detail(requst, article_id):
 def leave_comment(request, article_id):
     try:
         a = Article.objects.get(id=article_id)
-    except:
+    except Exception:
         raise Http404('No article found!')
 
     a.comment_set.create(comment_author=request.POST['name'], comment_text=request.POST['text'])

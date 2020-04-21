@@ -878,7 +878,7 @@ XRegExp = XRegExp || (function (undef) {
 
 /**
  * The XRegExp version number.
- * @static
+ * @static_files
  * @memberOf XRegExp
  * @type String
  */

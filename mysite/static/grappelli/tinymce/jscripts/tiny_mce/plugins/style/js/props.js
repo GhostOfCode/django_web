@@ -133,7 +133,7 @@ function init(ed) {
 	fillSelect(0, 'list_type', 'style_list_type', defaultListType, ';', true);
 	fillSelect(0, 'list_position', 'style_list_position', "inside;outside", ';', true);
 
-	fillSelect(0, 'positioning_type', 'style_positioning_type', "absolute;relative;static", ';', true);
+	fillSelect(0, 'positioning_type', 'style_positioning_type', "absolute;relative;static_files", ';', true);
 	fillSelect(0, 'positioning_visibility', 'style_positioning_visibility', "inherit;visible;hidden", ';', true);
 
 	fillSelect(0, 'positioning_width_measurement', 'style_positioning_width_measurement', defaultMeasurement, ';', true);
