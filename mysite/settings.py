@@ -32,8 +32,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'articles.apps.ArticlesConfig',
-    'showcase.apps.ShowcaseConfig',
     'grappelli',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -41,6 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'articles.apps.ArticlesConfig',
+    # possible just to put articles
+    'showcase.apps.ShowcaseConfig',
+    'landing',
 ]
 
 STATICFILES_FINDERS = [
