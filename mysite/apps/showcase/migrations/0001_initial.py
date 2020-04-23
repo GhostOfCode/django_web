@@ -27,7 +27,7 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('comment_author', models.CharField(max_length=75, verbose_name='Comments author')),
                 ('comment_text', models.CharField(max_length=200, verbose_name='Text of comment')),
-                ('article', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='articles.Article')),
+                ('article', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='showcase.Article')),
             ],
         ),
     ]
