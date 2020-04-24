@@ -39,8 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # possible just to put showcase
-    'showcase',
+    # FULL PATH --- THAT'S FCKNG MATTER!!!!
+    'django_web.mysite.apps.showcase.apps.ShowcaseConfig',
 ]
 
 STATICFILES_FINDERS = [
@@ -64,7 +64,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(PROJECT_ROOT, 'templates')
+            os.path.join(PROJECT_ROOT, 'templates'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {

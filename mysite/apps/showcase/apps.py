@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class ArticlesConfig(AppConfig):
-    name = 'showcase'
+class ShowcaseConfig(AppConfig):
+    name = 'django_web.mysite.apps.showcase'
     verbose_name = 'Blog'
