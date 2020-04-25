@@ -20,8 +20,8 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 # from django.conf.urls.static import static
 
 urlpatterns = [
-    path('showcase/', include('showcase.urls')),
     path('grappelli/', include('grappelli.urls')),
+    path('showcase/', include('mysite.apps.showcase.urls')),
     path('admin/', admin.site.urls),
 ]
 

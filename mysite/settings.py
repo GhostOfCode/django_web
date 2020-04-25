@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # FULL PATH --- THAT'S FCKNG MATTER!!!!
-    'django_web.mysite.apps.showcase.apps.ShowcaseConfig',
+    'mysite.apps.showcase.apps.ShowcaseConfig',
 ]
 
 STATICFILES_FINDERS = [
