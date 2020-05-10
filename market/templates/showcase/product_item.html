@@ -1,0 +1,22 @@
+<div class="col-lg-3">
+    <div class="product-item">
+        <div>
+            <a href="{% url 'products:product' product_image.product.id %}">
+                <img src="{{ product_image.image.url }}" width="200" height="200" alt="" class="img-fluid">
+            </a>
+        </div>
+        {% if product_image.product.discount %}
+            <div class="discount-container">
+                <span>{{ product_image.product.discount }}%</span>
+            </div>
+        {% endif %}
+        <h6>{{ product_image.product.name }}</h6>
+        <p>{{ product_image.product.description|truncatechars_html:20 }}</p>
+        <p class="item-price">{{ product_image.product.price }}</p>
+        <div class="add-to-cart-btn">
+            <button class="btn btn-success">
+                Add to cart
+            </button>
+        </div>
+    </div>
+</div>

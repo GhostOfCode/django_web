@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Welcome!
+{% endblock %}
+
+{% block content %}
+    <div class="section-top">
+        <img src="{% static 'img/slider0.jpg' %}" alt="" class="img-fluid">
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="text-center">New arrivals</h1>
+                </div>
+{#                {% for product_image in product_images %}#}
+                {% for product_image in new_products %}
+                    {% include 'showcase/product_item.html' %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="text-center">Phones</h1>
+                </div>
+                {% for product_image in product_images_phones %}
+                    {% include 'showcase/product_item.html' %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="text-center">Accessories</h1>
+                </div>
+                {% for product_image in product_images_accessories %}
+                    {% include 'showcase/product_item.html' %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="text-center">Laptops</h1>
+                </div>
+                {% for product_image in product_images_laptops %}
+                    {% include 'showcase/product_item.html' %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="section section-delivery">
+        <div>
+            <h3>Free delivery for all customers!</h3>
+        </div>
+    </div>
+{% endblock %}

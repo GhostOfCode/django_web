@@ -1,0 +1,48 @@
+#tweets {
+	margin-left: 20px
+}
+#tweets ul {
+	margin: 0;
+	padding: 0;
+}
+#tweets li {
+	list-style:none;
+	width: 100%;
+}
+#tweets .user, .tweet, .timePosted {
+	float:left;
+}
+#tweets .user {
+	display:none;
+}
+#tweets .tweet {
+	font-size: 14px;
+}
+#tweets .timePosted {
+	background: url(../images/twiter-bg.png) no-repeat;
+	font-size: 12px;
+	padding-left: 25px;
+	margin-bottom: 15px;
+}
+#tweets .user {
+	display: none;
+}
+#tweets a {
+	color: #68C39F;
+	-webkit-transition: all .8s ease;
+	transition: all .8s ease;
+}
+#tweets a:hover {	
+	color: #449BB5;
+	-webkit-transition: all .8s ease;
+	transition: all .8s ease;
+}	
+#tweets .user span span {
+	display: none;
+}
+#tweets .user img, .user a > span {
+	float:left;
+}
+#tweets .interact {
+	display:none;
+}
