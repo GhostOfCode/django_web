@@ -128,8 +128,13 @@ html, body{
     background-color: #edeef0;
 }
 
-.navbar{
+.navbar-main{
     border-bottom: 3px solid lightblue;
+}
+
+.navbar-top{
+    border: none;
+    height: 25px;
 }
 
 .footer{
@@ -221,5 +226,20 @@ html, body{
 }
 
 .product-description-tabs{
+    padding: 10px;
+}
+
+.basket-container{
+    position: relative;
+    width: 400px;
+    padding: 15px 10px;
+}
+
+.basket-items{
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    background-color: grey;
+    z-index: 10;
     padding: 10px;
 }

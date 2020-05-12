@@ -23,9 +23,6 @@
                         Price: {{ product.price }}
                     </p>
                 </div>
-{#                <div>#}
-{#                    {{ product.description }}#}
-{#                </div>#}
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                   <li class="nav-item">
                     <a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true">
@@ -52,6 +49,22 @@
                   </div>
                   <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                       ...
+                  </div>
+                  <div>
+                    <form action="" id="form_buying_product" class="form-inline">
+                        <div class="form-group">
+                            <input type="number" class="form-control" name="number" id="number">
+                        </div>
+                        <div class="form-group">
+                            <button id="submit_btn" type="submit" class="btn btn-success btn-buy"
+                            data-product_id = "{{ product.id }}"
+                            data-product_name = "{{ product.name }}"
+                            data-product_price="{{ product.price }}"
+                            >
+                                Buy it now!
+                            </button>
+                        </div>
+                    </form>
                   </div>
                 </div>
             </div>
