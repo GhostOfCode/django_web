@@ -1,245 +1,50 @@
-/**{*/
-/*    padding: 0;*/
-/*    margin: 0;*/
-/*    font-family: 'Roboto Condenset',sans-serif;*/
-/*}*/
-/*body, html{*/
-/*    overflow-x: hidden;*/
-/*    background-color: black;*/
-/*}*/
-/*nav{*/
-/*    margin: auto;*/
-/*    max-width: 1100px;*/
-/*    width: 100%;*/
-/*}*/
-/*#checkbox-menu,*/
-/*.toggle{*/
-/*    display: none;*/
-/*}*/
-/*.menu{*/
-/*    padding: 0;*/
-/*    margin: 0;*/
-/*    height: 50px;*/
-/*    display: flex;*/
-/*    flex-direction: row;*/
-/*    justify-content: space-around;*/
-/*    align-items: center;*/
-/*    list-style-type: none;*/
-/*}*/
-/*.menu li a {*/
-/*    color: whitesmoke;*/
-/*    text-decoration: none;*/
-/*    align-self: center;*/
-/*    font-size: 14px;*/
-/*    padding: 10px 15px;*/
-/*    transition: background .3s linear;*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Condenset',sans-serif;
+}
 
-/*}*/
-/*.menu li a:hover{*/
-/*    color: #ffcc01;*/
-
-/*}*/
-/*.menu li a.logo{*/
-/*    font-size: 25px;*/
-/*    margin-right: 180px;*/
-
-/*}*/
-/*.menu li a.contacts{*/
-/*    margin-right: 12px;*/
-
-/*}*/
-/*!* Slide*/
-/*Настройка слайдера *!*/
-/*#slides{*/
-/*    position: relative;*/
-/*    height: 250px;*/
-/*    padding: 0px;*/
-/*    margin: 0px;*/
-/*    list-style-type: none;*/
-/*}*/
-
-/*.slide{*/
-/*    position: absolute;*/
-/*    left: 0px;*/
-/*    top: 0px;*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    opacity: 0;*/
-/*    z-index: 1;*/
-
-/*    -webkit-transition: opacity 1s;*/
-/*    -moz-transition: opacity 1s;*/
-/*    -o-transition: opacity s;*/
-/*    transition: opacity 1s;*/
-/*}*/
-
-/*.showing{*/
-/*    opacity: 3;*/
-/*    z-index: 2;*/
-/*}*/
+/* ----------------------------------Стили для навигации------------------ */
 
 
-/*.slide{*/
-/*    font-size: 40px;*/
-/*    padding: 40px;*/
-/*    box-sizing: border-box;*/
-/*    background: #333;*/
-/*    color: #fff;*/
-/*}*/
-
-/*.slide:nth-of-type(1){*/
-/*    background: pink;*/
-/*    background-image: url(https://www.audio-drive.ru/upload/iblock/003/7216_dop2.jpg) ;*/
-/*    vertical-align: middle;*/
-
-/*}*/
-/*.slide:nth-of-type(2){*/
-/*    background: orange;*/
-/*    background-image: url(http://a66.ru/catalogue/294/6141.jpeg);*/
-
-/*}*/
-/*.slide:nth-of-type(3){*/
-/*    background: green;*/
-/*    background-image: url(https://gloimg.chinabrands.com/cb/pdm-product-pic/Electronic/2016/08/29/source-img/20160829144308_95069.jpg);*/
-/*}*/
-/*.slide:nth-of-type(4){*/
-/*    background: blue;*/
-/*    background-image: url(http://ae01.alicdn.com/kf/HTB11ZF0XRGw3KVjSZFwq6zQ2FXa4.jpg?width=950&height=966&hash=1916);*/
-/*}*/
-/*.slide:nth-of-type(5){*/
-/*    background: purple;*/
-/*    background-image: url(https://ae01.alicdn.com/kf/H523fc6d9dae24cb387e4bdbdd87a4d87x.jpg);*/
-/*}*/
-
-/*.popularTop{*/
-/*    color: whitesmoke;*/
-/*    text-decoration: none;*/
-/*    align-self: center;*/
-/*    font-size: 20px;*/
-/*    padding-top: 45px;*/
-/*    text-align: center;*/
-/*}*/
-html, body{
-    height: 100%;
-    max-height: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=IBM+Plex+Sans:wght@500&family=Noto+Serif&display=swap');
+body, html{
+    overflow-x: hidden;
+    
+}
+nav{
+    margin: auto;
+    max-width: 1100px;
     width: 100%;
-    max-width: 100%;
-    font-family: 'Roboto', sans-serif;
-    background-color: #edeef0;
+    text-decoration: none;
+    padding: 30px;
+    background-color: rgb(26, 23, 23);
 }
+.menuBase{
+    display: flex;
+    font-family: 'IBM Plex Sans', sans-serif;
+    align-self: center;
+    font-size: 15px;
+    transition: background .3s linear;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+.menu li a {
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-decoration: none;
+    color: #D93095;
+}
+.menu li a:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.menu li a.logo{
+    font-size: 26px;
+}
+.menu li a.contacts{
+    margin-right: 130px;
 
-.navbar-main{
-    border-bottom: 3px solid lightblue;
 }
-
-.navbar-top{
-    border: none;
-    height: 25px;
-}
-
-.footer{
-    background-color: white;
-    /*margin-top: -100px;*/
-    /*height: 100px;*/
-}
-
-.top-container{
-    padding-top: 10%;
-}
-
-.general-container{
-    background: url('../img/picjumbo.com_IMG_6533.jpg');
-    height: 100%;
-    max-height: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    max-width: 100%;
-}
-
-.general-container form{
-    margin-top: 30px;
-    padding: 10px;
-}
-
-.general-container form label{
-    font-weight: 100;
-    color: white;
-}
-
-.btn-orange{
-    background-color: #e8643e;
-    border: none;
-}
-
-.btn-orange:hover{
-    background-color: #dc5129;
-    border: none;
-}
-
-.new_title{
-    text-align: center;
-    color: white;
-    font-weight: 100;
-    line-height: 50px;
-}
-
-.section-top{
-    /*margin: 20px;*/
-}
-
-.product-item{
-    height: 365px;
-    background: white;
-    border: 1px solid lightgrey;
-    position: relative;
-    padding: 10px 0 10px 0;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.discount-container{
-    position: absolute;
-    background-color: lightgreen;
-    top: 30%;
-    width: 30%;
-    color: white;
-    font-weight: 700;
-    padding: 3px;
-}
-
-.add-to-cart-btn{
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform:translate(-50%, -50%);
-}
-
-.section{
-    background-color: lightblue;
-}
-
-.section-delivery{
-    background: url("../img/picjumbo.com_IMG_1800.jpg");
-    height: 200px;
-    text-align: center;
-}
-
-.product-description-tabs{
-    padding: 10px;
-}
-
-.basket-container{
-    position: relative;
-    width: 400px;
-    padding: 15px 10px;
-}
-
-.basket-items{
-    position: absolute;
-    top: 50px;
-    width: 100%;
-    background-color: grey;
-    z-index: 10;
-    padding: 10px;
-}
+/*------------------------------------ КОНЕЦ НАВИГАЦИИ ----------------------------------------------*/
