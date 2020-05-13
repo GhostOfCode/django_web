@@ -3,6 +3,10 @@
     margin: 0;
     font-family: 'Roboto Condenset',sans-serif;
 }
+
+/* ----------------------------------Стили для навигации------------------ */
+
+
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=IBM+Plex+Sans:wght@500&family=Noto+Serif&display=swap');
 body, html{
     overflow-x: hidden;
@@ -43,3 +47,4 @@ nav{
     margin-right: 130px;
 
 }
+/*------------------------------------ КОНЕЦ НАВИГАЦИИ ----------------------------------------------*/
