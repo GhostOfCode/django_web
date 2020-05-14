@@ -74,7 +74,7 @@ footer{
 }
 .footerContacts{
     display: grid;
-    grid-template-rows:auto;  /*НАДО ПЕРЕЧИТАТЬ РАБОТУ С ГРИДАМИ */
+    grid-template-rows:auto;  /*НАДО ПЕРЕЧИТАТЬ РАБОТУ С ГРИДАМИ  */
 }
 .imgFooter{
     width: 50px;
