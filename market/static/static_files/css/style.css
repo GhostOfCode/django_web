@@ -3,22 +3,22 @@
     margin: 0;
     font-family: 'Roboto Condenset',sans-serif;
 }
-
-/* ----------------------------------Стили для навигации------------------ */
-
-
-@import url('https://fonts.googleapis.com/css2?family=Arvo&family=IBM+Plex+Sans:wght@500&family=Noto+Serif&display=swap');
 body, html{
     overflow-x: hidden;
     
 }
+/* ----------------------------------Стили для навигации------------------ */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=IBM+Plex+Sans:wght@500&family=Noto+Serif&display=swap');
+
 nav{
     margin: auto;
     max-width: 1100px;
     width: 100%;
     text-decoration: none;
     padding: 30px;
-    background-color: rgb(26, 23, 23);
+    background-color: rgb(240, 239, 239);
 }
 .menuBase{
     display: flex;
@@ -42,9 +42,40 @@ nav{
 }
 .menu li a.logo{
     font-size: 26px;
+    margin-right: 100px;
 }
 .menu li a.contacts{
     margin-right: 130px;
 
 }
-/*------------------------------------ КОНЕЦ НАВИГАЦИИ ----------------------------------------------*/
+.menu li a.shopp{
+    display: inline;
+    min-width: 100px;
+    
+}
+.imgShopping{
+    color:#D93095;
+    max-width: 30px;
+    
+}
+.imgShopping:hover{
+    color: rgb(255, 255, 255);
+}
+
+/*------------------------------------ КОНЕЦ НАВИГАЦИИ --------------------------------------------------------------*/
+
+/* -----------------------------------СТИЛИ ДЛЯ ФУТЕРА-------------------------------------------------------------- */
+footer{
+    background-color: rgb(148, 144, 144);
+    display: block;
+    margin: 0 auto;
+    max-width: 1100px;
+    width: 100%;
+}
+.footerContacts{
+    display: grid;
+    grid-template-rows:auto;  /*НАДО ПЕРЕЧИТАТЬ РАБОТУ С ГРИДАМИ */
+}
+.imgFooter{
+    width: 50px;
+}
