@@ -37,6 +37,7 @@
     </ul>
   </div>
 </nav> -->
+{% load static %}
 <nav class="menu">
     <ul class="menuBase">
         <li><a class="logo" href="#">iCase</a></li>
@@ -44,7 +45,8 @@
         <li><a href="#">Акции</a></li>
         <li><a href="#">Оплата / Доставка</a></li>
         <li><a class="contacts" href="#">Контакты</a></li>
-        <li><a href="#">Корзина</a></li>
+        <li><a class="shopp" href="#">
+          Корзина<img class="imgShopping" src= "{% static 'img/shopping.svg' %}"alt="Корзина"></a></li>
         <li><a href="#">Личный Кабинет</a></li>
     </ul>
 </nav>

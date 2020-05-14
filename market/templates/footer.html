@@ -1,5 +1,12 @@
-<footer class="footer mt-auto py-4">
-  <div class="container">
-    <span class="text-muted">Place sticky footer content here.</span>
+{% load static %}
+<footer class="footerMain">
+  
+  <div class="footer">
+    <div class="footerContacts">
+      <p>Свяжитесь с нами:</p>
+      <div><img src="{% static 'img/telegram.png' %}" alt=""></div>
+      <div><img src="{% static 'img/whtsap.png' %}" alt=""></div>
+      <div><img src="{% static 'img/insta.png' %}" alt=""></div>
+    </div>
   </div>
 </footer>
