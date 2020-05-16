@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     font-family: 'Roboto Condenset',sans-serif;
+    text-decoration: none;
+    list-style: none;
 }
 body, html{
     overflow-x: hidden;
@@ -35,15 +37,16 @@ nav{
 .menu li a {
     font-family: 'IBM Plex Sans', sans-serif;
     text-decoration: none;
-    color: #D93095;
+    color: rgb(255, 255, 255);
 }
 .menu li a:hover {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: #D93095;
 }
 .menu li a.logo{
-    font-size: 26px;
+    font-size: 35px;
     margin-right: 100px;
+    color: #D93095;
 }
 .menu li a.contacts{
     margin-right: 130px;
@@ -67,47 +70,67 @@ nav{
 
 /* -----------------------------------СТИЛИ ДЛЯ ФУТЕРА-------------------------------------------------------------- */
 footer{
-    background-color: #ffffff;
-    margin: 0 auto;
-    max-width: 1100px;
+    margin: auto;
+    max-width: 1140px;
     width: 100%;
-    display: grid;
-    grid-template-areas: "contacts catalog menu";
-    
-}
-.footerMain{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "contacts catalog menu";
-    
-}
-.footer_p{
-    color: rgb(0, 0, 0);
-
-}
-.footerContacts{
-    display: grid;
-    grid-template-rows:auto;  
-    grid-area: contacts;
-}
-.imgFooter{
-    width: 50px;
-} 
-.footerCatalog a{
+    display: block;
+    overflow: hidden;
+    padding: 70px 0;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0);
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-size: 15px;
-    display: grid;
-    grid-template-columns: 1fr ;
-    grid-template-rows: 1fr ;
-    grid-area: catalog;
 }
-.footerMenu a{
-    text-decoration: none;
-    color:rgb(0, 0, 0);
-    display: grid;
-    grid-template-columns: 1fr ;
-    grid-template-rows: 1fr ;
-    grid-area: menu;
+.inner_footer{
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 100%;
+}
+.inner_footer .logo_container{
+    width: 35%;
+    float: left;
+    height: 100%;
+    display: block;
+}
+.logo_footer{
+    font-size: 30px;
+    color:#D93095 ;
+    height: auto;
+    margin-left: 40px;
     
+    
+}
+.inner_footer .footer_third{
+    width: calc(21.6666666667%-20px);
+    margin-right: 200px;
+    float: left;
+    height: 100%;
+}
+.inner_footer .footer_third:last-child{
+    margin-right: 0;
+    
+}
+.inner_footer .footer_third h1{
+    font-family: 'arial';
+    color: white;
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+.inner_footer .footer_third a{
+    font-family: 'arial';
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+    display: block;
+    width: 100%;
+    padding-bottom: 7px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+.inner_footer .footer_third a:hover{
+    color: #D93095;
 }
