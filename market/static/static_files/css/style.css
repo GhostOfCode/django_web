@@ -27,12 +27,15 @@ nav{
     display: flex;
     font-family: 'IBM Plex Sans', sans-serif;
     align-self: center;
-    font-size: 15px;
+    font-size: 16px;
     transition: background .3s linear;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
+}
+.img_shop{
+    width: 17px;
 }
 .menu li a {
     font-family: 'IBM Plex Sans', sans-serif;
