@@ -5,7 +5,7 @@
 }
 body, html{
     overflow-x: hidden;
-    
+    background-image: url(https://img3.goodfon.ru/original/6000x4000/4/dd/abstract-colors-unreal-clouds-1927.jpg);
 }
 
 /* ----------------------------------Стили для навигации------------------ */
@@ -68,7 +68,7 @@ nav{
 /* -----------------------------------СТИЛИ ДЛЯ ФУТЕРА-------------------------------------------------------------- */
 footer{
     background-color: rgb(0, 0, 0);
-    display: block;
+    display: grid;
     margin: 0 auto;
     max-width: 1100px;
     width: 100%;
@@ -82,4 +82,9 @@ footer{
 }
 .imgFooter{
     width: 50px;
+}
+.footerCatalog .footerMenu{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 15px;
 }
